@@ -20,6 +20,7 @@ export default Component.extend({
   height: 'auto',
   eventLimit: false,
   businessHours: false,
+  aspectRatio: 1.3,
 
   // Text/Time Customization
   lang: 'en',
@@ -109,6 +110,7 @@ export default Component.extend({
       businessHours: this.get('businessHours'),
       titleFormat: this.get('titleFormat'),
       columnFormat: this.get('columnFormat'),
+      aspectRatio: this.get('aspectRatio');
 
       viewRender: (view, element) => {
         this.sendAction('viewRender', view, element);
